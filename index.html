@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Universe</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="win-lose-load">
+    <div class="win">
+        <h1><span class="main-color-text">You sure are smart!</span></h1>
+        <button>play again</button>
+    </div>
+    <div class="lose">
+        <h1>Better luck next time!</h1>
+        <button>try again</button>
+    </div>
+    <div class="load"></div>
+</div>
+<!-- INTRO PAGE START -->
+<!-- ///////////////////////////////////////////////// -->
+<div class="intro-page" id="intro">
+    <div class="header-group">
+        <h1 id="intro-header-one">The</h1>
+        <h1 id="intro-header-two">
+            <span class="main-color-text">
+                Universe
+            </span>
+        </h1>
+        <h1 id="intro-header-three">As You Know It</h1>
+        <button id="intro-button">Smart Enough?</button>
+    </div>
+</div>
+<!-- ///////////////////////////////////////////////// -->
+<!-- INTRO PAGE END -->
+
+
+
+
+<!-- GAME BOARD OVERLAY START -->
+<!-- ///////////////////////////////////////////////// -->
+<div class="gameboard-container" id="gameboard">
+    <div class="panel-overlay"></div>
+    <img id="settings" src="images/settings.jpg">
+
+
+
+
+
+
+
+    <!-- START PANEL CONTENT-->
+    <div class="panel-container" id="panel-container">
+        <div class="panel-content">
+            <h1 id="close-window">X</h1>
+            <br>
+            <h2 class="hints-menu-open">Hints</h2>
+            <h2 class="hints-menu-close">Hints</h2>
+            <div class="hints-drop-menu">
+                    <hr>
+                    <p>Display hints to show above the hidden phrase! This can be turned on or off at any time.</p>
+                    <div class="button-pair">
+                        <button id="show-hint-button">Show</button>
+                        <button id="hide-hint-button">Hide</button>
+                    </div>
+            </div>
+            
+            <h2 class="keyboard-menu-open">Keyboard</h2>
+            <h2 class="keyboard-menu-close">Keyboard</h2>
+            <div class="keyboard-drop-menu">
+                <hr>
+                <p>Choose a keyboard style</p>
+                <button class="light-key-prev" id="keyboard-select" disabled>Light Keyboard</button>
+                <button class="dark-key-prev" id="keyboard-select">Dark Keyboard</button>
+                <button class="color-key-prev" id="keyboard-select">Colorful Keyboard</button>
+            </div>
+            <h2 class="reset-menu-open">Reset Game Board</h2>
+            <h2 class="reset-menu-close">Reset Game Board</h2>
+            <div class="reset-drop-menu">
+                <hr>
+                <p>Resetting your game will completely reset the game board. You cannot undo this. </p>
+                <button id="reset-menu-button">Reset Game</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- END PANEL CONTENT-->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="gameboard-content">
+
+        <h1>The Universe As You Know It</h1>
+        <div class="hintDiv">
+        <h2></h2>
+        </div>
+        <div id="phrase">
+            <ul></ul>
+        </div>
+        
+
+        <div class="keyboard" id="qwerty">
+            <ul>
+                <li>Q</li>
+                <li>W</li>
+                <li>E</li>
+                <li>R</li>
+                <li>T</li>
+                <li>Y</li>
+                <li>U</li>
+                <li>I</li>
+                <li>O</li>
+                <li>P</li>
+            </ul>
+            <ul>
+                <li>A</li>
+                <li>S</li>
+                <li>D</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+                <li>J</li>
+                <li>K</li>
+                <li>L</li>
+            </ul>
+            <ul>
+                <li>Z</li>
+                <li>X</li>
+                <li>C</li>
+                <li>V</li>
+                <li>B</li>
+                <li>N</li>
+                <li>M</li>
+            </ul>
+        </div>
+        <div class="life-points">
+            <ol class='orderedlist'>
+                <li><img src="images/life.PNG"></li>
+                <li><img src="images/life.PNG"></li>
+                <li><img src="images/life.PNG"></li>
+                <li><img src="images/life.PNG"></li>
+                <li><img src="images/life.PNG"></li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- ///////////////////////////////////////////////// -->
+<!-- GAME BOARD OVERLAY END -->
+<div class="popup">
+        <img src="images/cuteplanet.png" width='200px'>
+        <p>You have already clicked this letter, silly!</p>
+        <button>close</button>
+</div>
+<div class="score1" id="scoreNum"><p>-1</p></div>
+<div class="score2" id="scoreNum"><p>-1</p></div>
+<div class="score3" id="scoreNum"><p>-1</p></div>
+<div class="score4" id="scoreNum"><p>-1</p></div>
+<div class="score5" id="scoreNum"><p>-1</p></div>
+
+
+
+
+
+<script src="js/jquery/jquery.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

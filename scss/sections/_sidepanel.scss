@@ -1,0 +1,168 @@
+.panel-container {
+    z-index: 1000;
+    width: 1px;
+    border-right: 1px solid rgb(68, 68, 68);
+    height: 100vh;
+    background-color:rgba(25, 30, 46, 0.774);
+    padding: 5px 15px;
+
+    transition: 1s;
+    position: relative;
+    overflow-Y:auto;
+}
+.panel-overlay {
+    background-image: linear-gradient(to right, rgba($prim-blue, 0.211)25%,
+                                                rgba(0, 0, 0, 0.5)50%);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+}
+#close-window {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    float: right;
+    transition: .4s;
+    color: gray;
+        &:hover {
+            cursor: pointer;
+            color: $prim-blue;
+        }
+}
+.panel-container hr {
+    border: 1px solid rgb(77, 77, 77);
+}
+.button-pair {
+    display: flex;
+    flex-wrap:nowrap;
+        & button {
+            width: 100%;
+        }
+}
+#show-hint-button {
+    margin-right: 10px;
+    border: 1px solid rgb(60, 170, 119);
+    color: rgb(60, 170, 119);
+    border-radius: 3px;
+    background-color: transparent;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 5px;
+            color: rgb(81, 228, 159);
+            border: 1px solid rgb(81, 228, 159);
+        }
+}
+#hide-hint-button {
+    border: 1px solid indianred;
+    color: indianred;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 5px;
+            color: rgb(248, 125, 125);
+            border: 1px solid rgb(248, 125, 125);
+        }
+}
+.hint {
+    color: $prim-blue;
+}
+
+.panel-content h2 {
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: rgba(50, 58, 77, 0.445);
+    border: 1px solid rgb(167, 167, 167);
+    padding: 15px 15px;
+    display: block;
+    margin-top: 30px;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 4px;
+            background-color: rgba($prim-blue, 0.5);
+            cursor:pointer;
+            border: 1px solid white;
+        }
+}
+.hints-menu-close,
+.keyboard-menu-close,
+.reset-menu-close {
+    text-align:center;
+}
+
+#reset-menu-button {
+    width: 100%;
+    color: indianred;
+    border: 1px solid indianred;
+    background-color: transparent;
+    padding: 20px 0;
+    border-radius: 5px;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 4px;
+            background-color: indianred;
+            color:white;
+            
+        }
+}
+
+.hints-menu-close,
+.keyboard-menu-close,
+.reset-menu-close {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: rgba($prim-blue, 0.5)!important;
+}
+
+.hints-drop-menu,
+.keyboard-drop-menu,
+.reset-drop-menu {
+    border-radius: 3px;
+    padding: 15px;
+    background-color:  rgba(80, 80, 80, 0.17);
+}
+
+.keyboard-drop-menu button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    transition: .4s;
+        &:hover {
+            transform: scale(1.1);
+        }
+}
+
+.light-key-prev {
+    border: 1px solid white;
+    color:white;
+    background-color: transparent;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 4px;
+            background-color: white;
+            color:black;
+        }
+}
+.dark-key-prev {
+    border: 1px solid white;
+    color:white;
+    background-color: transparent;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 4px;
+            background-color: rgb(37, 38, 46);
+        }
+  
+}
+.color-key-prev {
+    border: 1px solid white;
+    color:white;
+    background-color: transparent;
+    transition: .4s;
+        &:hover {
+            letter-spacing: 4px;
+            background-image: linear-gradient(rgba(67, 48, 180, 0.548),rgba(248, 88, 109, 0.603)), url(../images/colorkeys.jpg);
+        }
+}

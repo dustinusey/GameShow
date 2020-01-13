@@ -1,0 +1,115 @@
+.gameboard-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4); 
+
+    position: absolute;
+    top: 0;
+    color: white;
+    overflow:hidden;
+
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+
+.gameboard-content {
+    margin: auto;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gameboard-content h1 {
+    margin: auto;
+    text-align:center;
+}
+
+.keyboard {
+    margin: auto;
+}
+.phrase  {
+    margin: auto;
+}
+.phrase li {
+    background-color: gray;
+    padding: 10px;
+    width: 40px;
+        &:focus {
+            outline:none;
+        }
+}
+
+
+
+
+
+
+
+
+#phrase ul {
+    text-align:center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+
+.letter {
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 1.9em;
+    margin: auto 10px;
+    background-color: $secondary-color;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20px;
+    color: transparent;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.space{
+    width: 40px;
+}
+
+.show{
+    animation: correctLetter .5s forwards 0s linear;
+    background-color: $prim-blue;
+    color:white!important;
+}
+
+
+
+.hintDiv {
+    color: $prim-blue;
+    margin: auto;
+}
+
+.score1, .score2, .score3, .score4 {
+    transition: 3s;
+    position: absolute;
+    right: 100px;
+    top: 600px;
+    font-size: 4em;
+    color:white;
+    opacity: 0.5;
+        & p {
+            transition: 2s;
+        }
+}
+
+.score1 p, .score3 p {
+    color:$secondary-color;
+}
+.score2 p, .score4 p {
+    color: $prim-blue;
+}

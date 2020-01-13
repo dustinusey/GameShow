@@ -1,0 +1,90 @@
+.win {
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(67, 48, 180, 0.548),rgba(248, 88, 109, 0.603)), url(../images/winbg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: #343957;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: center;
+        & h1 {
+            color: white;
+            margin: auto auto 10px;
+        }
+        & button {
+            font-size: 1.2em;
+            margin: 10px auto auto;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            width: 300px;
+            background-image: linear-gradient(to right, #e66465, $prim-blue);
+            color:white;
+            text-transform: uppercase;
+            transition: .4s;
+                &:hover {
+                    letter-spacing: 4px;
+                }
+        }
+}
+
+
+
+.lose {
+    opacity: 0.9;
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(158, 72, 72, 0.685) 20%,rgba(15, 21, 31, 0.897) 75%), url(../images/losebg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #000;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content: center;
+    & h1 {
+        color: white;
+        margin: auto auto 10px;
+    }
+    & button {
+        font-size: 1.2em;
+        margin: 10px auto auto;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 300px;
+        background-color: indianred;
+        color:white;
+        text-transform: uppercase;
+        transition: .4s;
+            &:hover {
+                letter-spacing: 4px;
+            }
+    }
+}
+
+
+
+
+.load {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url(../images/loader3.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color: #1B1A30;
+}

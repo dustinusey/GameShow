@@ -1,0 +1,55 @@
+.intro-page {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(82, 104, 231, 0.275) 20%, 
+                                      rgba(37, 20, 19, 0.733) 80%),
+                                         url(../images/spacebg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-group {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    text-transform: uppercase;
+}
+
+#intro-header-one {
+    animation: header1Intro 1s forwards 0s linear;
+    margin: auto 0 -30px 30px;
+}
+#intro-header-two {
+    animation: header2Intro 1.25s forwards 0s linear;
+    margin-left: 100px;
+}
+#intro-header-three {
+    animation: header3Intro 1s forwards 0s linear;
+    margin: -30px 0 0 150px;
+}
+.intro-page button {
+    animation: introButton 2s forwards 0s linear;
+    font-size: .8em;
+    margin: 50px 0 0 200px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 300px;
+    background-image: linear-gradient(to right, #e66465, $prim-blue);
+    color:white;
+    text-transform: uppercase;
+    transition: .8s;
+        &:hover {
+            letter-spacing: 4px;
+        }
+}

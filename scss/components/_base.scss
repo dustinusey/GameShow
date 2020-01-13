@@ -1,0 +1,28 @@
+* button {
+    cursor:pointer;
+        &:focus {
+            outline:none;
+        }       
+}
+*::selection {
+    background-color: rgb(66, 66, 66);
+    color: $prim-blue;
+}
+* li {
+    list-style:none;
+}
+* ul {
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+
+//SPAN ITEM 1
+.main-color-text {
+    color:$prim-blue;
+    text-shadow: 2px 2px 5px black;
+}

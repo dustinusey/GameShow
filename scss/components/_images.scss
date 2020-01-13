@@ -1,0 +1,44 @@
+#settings {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    filter: brightness(3);
+    transition: .5s;
+    opacity: 0.4;
+        &:hover {
+            transform: rotate(20deg) scale(1.2);
+            cursor: pointer;
+            opacity: initial;
+        }
+}
+
+.life-points {
+    text-align:center;
+    margin-left: 40px;
+    transition: 1s;
+}
+.life-points img {
+    width: 60px;
+    margin: 10px 15px;
+    filter: hue-rotate(465deg);
+    
+}
+ol {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.restore-life {
+    animation: heartAnimate .6s forwards 0s linear;
+    opacity: .3;
+    filter:brightness(2.0) blur(2px) grayscale(100%)!important;
+}
+.no-life {
+    animation: heartAnimate .6s forwards 0s linear;
+    opacity: .3;
+    filter:brightness(2.0) blur(2px) grayscale(100%)!important;
+}
+
+
+
