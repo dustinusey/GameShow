@@ -267,13 +267,6 @@ return newNumber;
 
 
 
-
-
-
-
-
-
-
 // SHOW / HIDE HINTS
 ///////////////////////////////////////////////////
 $('.hintDiv').hide();
